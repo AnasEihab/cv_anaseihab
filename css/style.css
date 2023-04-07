@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap');
+
+:root {
+	/* --primary: #00b87b; */
+	--primary: #d7a05d;
+	--secondary: #314355;
+	--light: #f2f2f2;
+	--dark: #2c3e50;
+}
+* {
+	box-sizing: border-box;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Cairo', sans-serif;
+	background-color: var(--dark);
+	/* background-image: url(../imgs/footerstripes2.svg); */
+	color: white;
+}
+
+.main-title {
+	color: var(--primary);
+	font-size: 40px;
+	font-weight: 500;
+	position: relative;
+	padding-bottom: 10px;
+	width: fit-content;
+}
+.main-title::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: var(--light);
+	bottom: 0;
+	left: 0;
+}
+.main-title::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--light);
+	bottom: -1px;
+	left: -9px;
+	transform: translateY(2px);
+}
+.text-primary {
+	color: var(--primary) !important;
+}
+.bg-primary {
+	background-color: var(--primary) !important;
+}
+.text-light {
+	color: var(--light);
+}
+
+.icons a {
+	/* background-color: var(--secondary); */
+	color: var(--light);
+	border-radius: 50%;
+	margin: 0 10px;
+	transition: 0.3s;
+}
+.icons a {
+}
+.icons a i {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	font-size: 20px;
+}
+.icons a .facebook,
+.icons a .instagram,
+.icons a .twitter,
+.icons a .telegram {
+	transition: 0.3s;
+}
+.icons a .facebook:hover {
+	color: #1877f2;
+}
+.icons a .instagram:hover {
+	color: #e1306c;
+}
+.icons a .twitter:hover {
+	color: #1da1f2;
+}
+.icons a .telegram:hover {
+	color: #0088cc;
+}
+
+.bg-secondary {
+	background-color: var(--secondary) !important;
+}
+.progress {
+	border-radius: 0px !important;
+	height: 5px;
+}
+.progress > div {
+	width: 95%;
+}
+.skill div p {
+	color: white;
+}
+.arrow {
+	position: relative;
+}
+.arrow::before {
+	font-family: 'Font Awesome 6 Free';
+	content: '\f061';
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	right: 33px;
+	font-size: 18px;
+}
+.freelancer img {
+	transition: 0.3s;
+}
+.freelancer img:hover {
+	transform: scale(1.2);
+}
+form input,
+form textarea {
+	color: white !important;
+	border-radius: 0 !important;
+}
+form input:focus {
+	box-shadow: 0 0 0 0.25rem var(--primary) !important;
+	border-radius: 0;
+}
+form textarea:focus {
+	box-shadow: 0 0 0 0.25rem var(--primary) !important;
+	border-radius: 0;
+}
+
+/* .card {
+	width: calc(98% / 2 );
+} */
+
+@media (max-width: 767px) {
+	.freelancer a img {
+		width: 20% !important;
+	}
+}
+
+select  {
+	background-color: var(--secondary) !important;
+	color: white !important;
+}
+
+select option {
+	background-color: transparent !important;
+	color: transparent !important;
+}
+.col-lg-8 {
+	background-image: url(../imgs/footerstripes2.svg);
+}
