@@ -166,3 +166,8 @@ select option {
 .col-lg-8 {
 	background-image: url(../imgs/footerstripes2.svg);
 }
+@media (max-width: 991px) {
+	.information {
+		height: 90vh !important;
+	}
+}
